@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Keramik.css">
+    <style>
+        /* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Paytone+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Varela+Round&display=swap');
+
+/* Oswald */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Paytone+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Varela+Round&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* top */
+.top {
+    width: 100%;
+    background: #F8F8F8;
+    height: 91px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 150px;
+}
+
+button:hover {
+    background: #000;
+    box-shadow: 10px 10px 100px aqua;
+    color: aqua;
+    transition: 1s;
+}
+
+.ptext2>a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.ptext3>a {
+    text-decoration: none;
+    color: #F9A82F;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+/* header */
+
+.navbar {
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 120px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: #171717;
+  font-weight: 700;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #c9c9c9;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* bg */
+.bg{
+    background: radial-gradient(63.57% 111.48% at 50% 50%, #D3B482 0%, #AC9370 100%) !important;
+    width: 100%;
+    height: 400px;
+}
+
+.btn1 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    background: #F9A82F;
+    width: 123px;
+    height: 42px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.bg1 {
+    background-image: url('Mask\ Group\ \(25\).png');
+    width: 100%;
+    height: 400px;
+    padding-left: 15%;
+    padding-top: 5%;
+}
+
+.ptext {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+    line-height: 30px;
+}
+
+.ptext1 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+    line-height: 28px;
+}
+
+
+.search-wrapper {
+  position: relative;
+  width: 280px;
+  height: 38px;
+}
+
+input::placeholder {
+    color: #606060;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.search-wrapper input {
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+  padding-right: 35px; /* Ikonkaga joy qoldiramiz */
+  border: 1px solid #DCDCDC;
+  border-radius: 4px;
+  font-size: 14px;
+  border-radius: 50px;
+  background: transparent;
+}
+
+.search-wrapper img {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+}
+
+.n {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.n1 {
+    background: #FFFFFF;
+    width: 7px;
+    height: 7px;
+    border-radius: 90px;
+}
+
+.n2 {
+    background: #E8CB9F;
+    width: 7px;
+    height: 7px;
+    border-radius: 90px;
+}
+
+
+/* cards */
+.content {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    align-items: center;
+    gap: 20px;
+    padding: 0 180px;
+    margin-top: 2%;
+}
+
+.card {
+    background: #F6F6F6;
+    width: 217px;
+    height: 145px;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width:678px) {
+    .content {
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+    }
+    .top {
+        flex-direction: column;
+        height: 950px;
+        position: relative;
+        right: 160px;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        position: relative;
+        right: 160px;
+    }
+    .dropdown {
+        margin-left: 140px;
+    }
+}
+
+.p-text {
+    color: #151515;
+    font-size: 15px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+
+.p-text1 {
+    color: #646464;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 28px;
+    margin-top: 20px;
+}
+
+.user-text {
+    color: #484848;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.user-text>span {
+    color: #A1A1A1;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.item1 {
+    margin-left: 120px;
+}
+
+.container {
+    width: 100%;
+    height: 460px;
+    background: #FAFAFA;
+}
+
+.cont1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 6%;
+    padding-top: 100px;
+}
+
+.samsung {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 100px;
+}
+
+.n5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 50px;
+}
+
+.n6 {
+    width: 9px;
+    height: 9px;
+    background: #C4C4C4;
+    border-radius: 50px;
+}
+
+.n7 {
+    width: 9px;
+    height: 9px;
+    background: #F1F1F1;
+    border-radius: 50px;
+}
+
+.cont2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 4%;
+    margin-left: 100px;
+}
+
+
+@media (max-width: 678px) {
+    .cont1 {
+        flex-direction: column;
+    }
+
+    .container {
+        height: 1050px;
+    }
+}
+
+/* Наши преимущества */
+.m-text {
+    color: #151515;
+    font-size: 36px;
+    font-weight: 700;
+    margin-left: 15%;
+    margin-top: 7%;
+} 
+
+.content3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 100px;
+    margin-top: 4%;
+    padding: 0 180px;
+    margin-left: 50px;
+}
+
+.m-text1 {
+    color: #000;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.m-text2 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #646464;
+    margin-top: 20px;
+    line-height: 24px;  
+}
+
+
+/* Коротко о нас */
+.content5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 0 0 222px;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.m-text3 {
+    color: #151515;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.m-text4 {
+    color: #646464;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+.but1 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    background: #F9A82F;
+    border-radius: 100px;
+    border: none;
+    width: 123px;
+    cursor: pointer;
+    height: 41px;
+    margin-top: 30px;
+}
+
+
+/* Процесс покупки товара */
+.m-text5 {
+    color: #151515;
+    font-size: 36px;
+    font-weight: 700;
+    margin-left: 15%;
+    margin-top: 8%;
+}
+
+.m-text8 {
+    color: #000000;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 16px;
+}
+
+.line1001 {
+    background: #A1A1A1;
+    width: 90%;
+    height: 0.3px;
+}
+
+.m-txt a {
+    text-decoration: none;
+    color: #A1A1A1;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.m-txt {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+    margin-left: 15%;
+}
+
+.contain1 {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-top: 50px;
+    margin-left: 15%;
+}
+
+.contain2 {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-top: 120px;
+    margin-left: 12%;
+}
+
+.str1 {
+    margin-top: 50px;
+}
+
+/* SEO */
+.seo-container {
+  width: 77%;
+  margin: 100px auto;
+  padding-left: 50px;
+}
+
+.scroll-text {
+  max-height: 124px;
+  overflow: hidden;
+  position: relative;
+  animation: scrollText 10s linear infinite;
+  mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+}
+
+
+.scroll-text p {
+  line-height: 1.8;
+  font-size: 16px;
+  color: #555;
+}
+
+.seo-container h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #171717;
+}
+
+.more {
+  display: block;
+  margin-top: 16px;
+  color: #171717;
+  font-weight: 400px;
+  cursor: pointer;
+}
+
+/* footer */
+.footer {
+    background: #484848;
+    width: 100%;
+    height: 371px;
+}
+
+.form {
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+.footer-cont1 {
+    background: #383838;
+    width: 100%;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 200px 0 150px;
+    margin-top: 100px;
+}
+
+.f-text1>a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.f-text2>a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    color: #B0B0B0;
+}
+
+.f-text1 {
+    margin-bottom: 10px;
+}
+
+.f-text2 {
+    margin-top: 15px;
+}
+
+.block {
+    margin-left: 80px;
+}
+
+.block1 {
+    margin-left: 150px;
+}
+
+.my-p-text>a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.my-p-text1>a {
+    text-decoration: none;
+    color: #B0B0B0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.my-p-text1 {
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+.my-p-text {
+    margin-left: 80px;
+}
+
+.input1 {
+    border: 1px solid #B0B0B0;
+    width: 211px;
+    height: 41px;
+    background: transparent;
+    padding-left: 10px;
+}
+
+.input1::placeholder {
+    color: #B0B0B0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer-btn {
+    background: #B0B0B0;
+    width: 128px;
+    height: 41px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    margin-left: -4px;
+}
+
+
+.footer-cont {
+    display: flex;
+    padding-top: 70px;
+}
+
+.f-text>a {
+    text-decoration: none;
+    color: #5F5F5F;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.f-text {
+    margin-left: 80px;
+}
+
+
+@media (max-width: 678px) {
+    .footer-cont, .footer-cont1 {
+        flex-wrap: wrap;
+    }
+
+    .footer {
+        height: 1200px;
+    }
+
+    .block {
+        margin-top: 100px;
+    }
+
+    .footer-cont1 {
+        height: 100px;
+    }
+}
+    </style>
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+</head>
+<body>
+    <!-- top -->
+    <div class="top">
+        <div class="item">
+            <a href="#"><img src="logo (8).png" alt="logo"></a>
+        </div>
+        <div class="item">
+            <p class="ptext2"><a href="#">+7 926 780 3663</a></p>
+                <p class="ptext3"><a href="#">Обратный звонок</a></p>
+        </div>
+        <div class="item">
+            <div class="search-wrapper">
+  <input type="text" placeholder="Поиск" />
+  <img src="Vector (50).png" alt="Search" />
+</div>
+
+        </div>
+        <div class="item">
+            <a href="#"><img src="bookmarks.png" alt="like"></a>
+        </div>
+        <div class="item">
+            <a href="#"><img src="cart.png" alt="cart"></a>
+        </div>
+        <div class="item">
+            <a href="#"><img src="profile.png" alt="user"></a>
+        </div>
+    </div>
+
+<!-- header -->
+ <div class="navbar">
+
+
+  <div class="dropdown">
+    <button class="dropbtn" style="color:#F9A82F; font-weight: 700;">Каталог <span><img src="Vector (54).png" alt=""></span> 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">розетки</a>
+      <a href="#">Выключатели</a>
+      <a href="#">коробки
+распаечные</a>
+      <a href="#">изоляторы
+кабельные</a>
+      <a href="#">Втулки</a>
+      <a href="#">Рамки</a>
+    </div>
+  </div> 
+
+  <a href="#home">Главная</a>
+  <a href="#news">О нас</a>
+  <a href="#news">Акции</a>
+  <a href="#news">Новости</a>
+  <a href="#news">Контакты</a>
+
+</div>
+
+
+    <!-- bg -->
+    <div class="bg">
+        <div class="bg1">
+            <p class="ptext">Ищете где купить <br> механизмы Salvador?</p>
+
+            <p class="ptext1"> Осуществляя ее заказ на общую сумму от 100 000 рублей, под все заказанные <br> выключатели и розетки для открытой проводки в подарок вы получаете рамки из <br> натурального бука нашего собственного производства.</p>
+
+            <a href="#"><button class="btn1">Подробнее</button></a>
+
+            <div class="n">
+                <a href="#"><div class="n1"></div></a>
+                <a href="#"><div class="n2"></div></a>
+                <a href="#"><div class="n2"></div></a>
+                <a href="#"><div class="n2"></div></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- cards -->
+     <div class="content" style="margin-left: 50px;">
+        <div class="card">
+            <img src="B.png" alt="bochka" width="100px" height="130px">
+            <p class="p-text">розетки</p>
+        </div>
+
+        
+        <div class="card">
+            <img src="34024а.png" alt="image" width="80px" height="120px">
+            <p class="p-text">Выключатели</p>
+        </div>
+
+        
+        <div class="card" style="gap: 20px;">
+            <img src="330-СК.png" alt="image" width="70px" height="110px">
+            <p class="p-text">коробки <br>распаечные</p>
+        </div>
+
+        
+        <div class="card">
+            <img src="IMGP7888-copy-500x500.png" alt="image" width="100px" height="130px">
+            <p class="p-text">изоляторы <br>кабельные</p>
+        </div>
+
+        
+        <div class="card" style="gap: 40px;">
+            <img src="IMGP7885-copy-500x500.png" alt="image" width="60px" height="130px">
+            <p class="p-text">Втулки</p>
+        </div>
+
+        
+        <div class="card" style="gap: 20px;">
+            <img src="IMGP2404-copy.png" alt="image" width="100px" height="130px">
+            <p class="p-text">Рамки</p>
+        </div>
+
+        
+        <div class="card" style="gap: 20px;">
+            <img src="проводда.png" alt="image" width="100px" height="130px">
+            <p class="p-text">провода</p>
+        </div>
+
+        
+        <div class="card" style="gap: 15px;">
+            <img src="аксессуары.png" alt="image" width="90px" height="90px">
+            <p class="p-text" style="margin-bottom: 30px;">Аксессуары</p>
+        </div>
+
+        
+        <div class="card" style="gap: 30px;">
+            <img src="A60F2C-500x500.png" alt="image" width="60px" height="130px">
+            <p class="p-text">Лампы</p>
+        </div>
+
+        
+        <div class="card" style="gap: 20px;">
+            <img src="Nowodvorski-5754-500x500.png" alt="image" width="60px" height="130px">
+            <p class="p-text">светильники</p>
+        </div>
+     </div>
+
+
+     <!-- Наши преимущества -->
+      <p class="m-text">Наши преимущества</p>
+      <div class="content3">
+        <div class="card2">
+            <img src="Vector (52).png" alt="image">
+            <p class="m-text1">Эксклюзивный <br> товар</p>
+
+            <p class="m-text2">Эксклюзивные <br> цветовые решения</p>
+        </div>
+
+        <div class="card2">
+            <img src="favorites-button.png" alt="image">
+            <p class="m-text1">Наша <br> специализация</p>
+
+            <p class="m-text2">Специализируемся на <br> ретро электрике</p>
+        </div>
+
+        <div class="card2">
+            <img src="Component.png" alt="image">
+            <p class="m-text1">Весь товар <br> вместе</p>
+
+            <p class="m-text2">Все бренды в одном <br> месте</p>
+        </div>
+
+        <div class="card2">
+            <img src="warehouse.png" alt="image">
+            <p class="m-text1">Собственный <br> склад</p>
+
+            <p class="m-text2">Поэтому доставляем <br> товар очень быстро</p>
+        </div>
+
+        <div class="card2">
+            <img src="customer-support.png" alt="image">
+            <p class="m-text1">Собственное <br> производство</p>
+
+            <p class="m-text2">Гарантия и качество <br>от производителя</p>
+        </div>
+
+        <div class="card2">
+            <img src="percentage.png" alt="image">
+            <p class="m-text1">Актуальные <br> акции</p>
+
+            <p class="m-text2">Только новые <br>и честные акции</p>
+        </div>
+
+        <div class="card2">
+            <img src="interview.png" alt="image">
+            <p class="m-text1">Гибкий подход <br>к клиентам</p>
+
+            <p class="m-text2">Индивидуальный <br> подход в подборе</p>
+        </div>
+
+        <div class="card2">
+            <img src="Component (1).png" alt="image">
+            <p class="m-text1">Бесплатная <br> доставка</p>
+            <p class="m-text2">В зависимости <br>от размера покупки</p>
+        </div>
+
+        <div class="card2">
+            <img src="calendar (2).png" alt="image">
+            <p class="m-text1">На рынке более <br> 10 лет</p>
+            <p class="m-text2">Поделимся знанием <br>и опытом</p>
+        </div>
+
+        <div class="card2">
+            <img src="Vector (53).png" alt="image">
+            <p class="m-text1">Официальный <br> товар</p>
+            <p class="m-text2">Весь ассортимент <br> сертифицированный</p>
+        </div>
+
+      </div>
+
+
+      <!-- Коротко о нас -->
+      <div class="content5">
+        <div class="item81">
+            <p class="m-text3">Коротко о нас</p>
+            <p class="m-text4">Мы, Фабрика Декора "КерамикЪ", уже много лет специализируемся на ретро электрике. <br>
+За годы существования из увлекшихся любителей с горящими глазами наша команда <br> превратилась в настоящих с большой буквы Профессионалов своего дела. Но искра <br>
+в наших глазах совершенно не затухла! Сегодня, мы планомерно работаем над тем, <br>
+чтоб вырастить в таких же Профессионалов новых членов нашей команды.</p>
+
+<a href="#"><button class="but1">Подробнее</button></a>
+        </div>
+        <div class="item82">
+            <img src="image - 2025-05-18T133827.397.png" alt="Lyustra" width="780px" height="302px">
+        </div>
+      </div>
+
+
+      <!-- Процесс покупки товара -->
+       <p class="m-text5">Процесс покупки товара</p>
+       <div class="contain1">
+            <div class="card2">
+                <img src="comp1.png" alt="img">
+                <p class="m-text8">Выберете <br>товар</p>
+            </div>
+
+            <div class="card2">
+                <a href="#"><img src="Vector 2.4.png" alt="str" class="str1"></a>
+            </div>
+
+            <div class="card2">
+                <img src="comp2.png" alt="img">
+                <p class="m-text8">Оформите <br>заказ</p>
+            </div>
+
+            <div class="card2">
+               <a href="#"><img src="Vector 2.4.png" alt="str" class="str1"></a>
+            </div>
+
+            <div class="card2">
+                <img src="speack.png" alt="img">
+                <p class="m-text8">Наш менеджер <br>свяжется с вами</p>
+            </div>
+
+            <div class="card2">
+                <a href="#"><img src="Vector 2.4.png" alt="str" class="str1"></a>
+            </div>
+
+            <div class="card2">
+                <img src="car.png" alt="img">
+                <p class="m-text8">Мы отправим <br>вам товар</p>
+            </div>
+
+            <div class="card2">
+               <a href="#"><img src="Vector 2.4.png" alt="str" class="str1"></a>
+            </div>
+
+            <div class="card2">
+                <img src="boy-broad-smile (1).png" alt="img">
+                <p class="m-text8">Вы счастливый <br>клиент</p>
+            </div>
+
+       </div>
+
+       <div class="content2">
+        <div class="m-txt">
+            <a href="#">или</a>
+            <div class="line1001"></div>
+        </div>
+       </div>
+
+        <div class="contain1">
+            <div class="card2">
+                 <img src="phone-call.png" alt="img">
+                <p class="m-text8">Вы звоните <br> нам</p>
+            </div>
+
+            <div class="card2">
+                <a href="#"><img src="Vector 2.4.png" alt="str" class="str1"></a>
+            </div>
+
+            <div class="card2">
+                 <img src="comp2 (1).png" alt="img">
+                <p class="m-text8">Оформляем <br>заказ</p>
+            </div>
+
+            <div class="card2">
+                <a href="#"><img src="Vector 2.4.png" alt="str" class="str1"></a>
+            </div>
+
+            <div class="card2">
+                 <img src="car (1).png" alt="img">
+                <p class="m-text8">Мы отправим <br>вам товар</p>
+            </div>
+
+            <div class="card2">
+                <a href="#"><img src="Vector 2.4.png" alt="str" class="str1"></a>
+            </div>
+
+            <div class="card2">
+                 <img src="boy-broad-smile (1).png" alt="img">
+                <p class="m-text8">Вы счастливый <br> клиент</p>
+            </div>
+
+       </div>
+
+     <!-- container -->
+      <div class="container">
+        <div class="cont1">
+        <div class="item1">
+            <div class="user">
+                <img src="Ellipse.png" alt="user">
+                <p class="user-text">Андрей Иванов <br><span>10.07.19</span></p>
+            </div>
+
+            <p class="p-text1">Мы, Фабрика Декора "КерамикЪ", уже много лет <br>специализируемся на ретро электрике. За годы <br> существования из увлекшихся любителей с <br> горящими глазами наша команда превратилась в <br> настоящих с большой буквы Профессионалов <br> своего дела.</p>
+        </div>
+
+
+
+        <div class="item2">
+                 <div class="user">
+                <div class="samsung"><img src="Ellipse (1).png" alt="samsung"></div>
+                <p class="user-text">Samsung inc. <br><span>10.07.19</span></p>
+            </div>
+
+            <p class="p-text1">Мы, Фабрика Декора "КерамикЪ", уже много лет <br> специализируемся на ретро электрике. За годы <br> существования из увлекшихся любителей с <br> горящими глазами наша команда превратилась в <br> настоящих с большой буквы Профессионалов <br> своего дела.</p>
+        </div>
+
+
+
+        <div class="item3">
+             <div class="user">
+                <img src="Ellipse (2).png" alt="user">
+                <p class="user-text">Александр Сергеев <br><span>10.07.19</span></p>
+            </div>
+
+            <p class="p-text1">Мы, Фабрика Декора "КерамикЪ", уже много лет  <br>специализируемся на ретро электрике. За годы <br> существования из увлекшихся любителей с <br> горящими глазами наша команда превратилась в <br> настоящих с большой буквы Профессионалов <br> своего дела.</p>
+        </div>
+        </div>
+
+        <div class="n5">
+            <a href="#"><div class="n6"></div></a>
+            <a href="#"><div class="n7"></div></a>
+            <a href="#"><div class="n7"></div></a>
+        </div>
+      </div>
+
+
+      <!-- logos -->
+      <div class="cont2">
+        <a href="#"><img src="Qandil.png" alt="logo1"></a>
+        <a href="#"><img src="bironi-120x80.png" alt="logo1"></a>
+        <a href="#"><img src="fdkeramik-120x80.png" alt="logo1"></a>
+        <a href="#"><img src="green_el-120x80.png" alt="logo1"></a>
+        <a href="#"><img src="lindas-120x80.png" alt="logo1"></a>
+        <a href="#"><img src="naBrevno-logo-120x80.png" alt="logo1"></a>
+        <a href="#"><img src="retrika-120x80.png" alt="logo1"></a>
+        <a href="#"><img src="sun-lumen-120x80.png" alt="logo1"></a>
+        <a href="#"><img src="werkel-120x80.png" alt="logo1"></a>
+    </div>
+
+
+    <!-- SEO текст -->
+    <div class="seo-container">
+  <h2>SEO текст</h2>
+  <div class="scroll-text">
+    <p>
+      Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI <br> века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. <br> Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время <br> послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus
+    </p>
+  </div>
+  <span class="more">Больше ›</span>
+</div>
+
+
+
+<!-- footer -->
+ <div class="footer">
+    <div class="footer-cont">
+        <div class="block1">
+            <p class="my-p-text"><a href="#">ПОДПИСАТЬСЯ</a></p>
+
+            <p class="my-p-text1"><a href="#">Подпишитесь на наши новости и узнавайте <br> первыми о самом интересном, что происходит в  <br>увлекательном мире ретро электрики.</a></p>
+
+            <form class="form">
+                <input type="text" placeholder="Ваш E-mail адрес" class="input1">
+                <a href="#"><button class="footer-btn">Подписаться</button></a>
+            </form>
+
+        </div>
+        <div class="block">
+            <p class="f-text1"><a href="#">ПОЛЕЗНАЯ ИНФОРМАЦИЯ</a></p>
+
+            <p class="f-text2"><a href="#">Наши контакты</a></p>
+            <p class="f-text2"><a href="#">Сотрудничество</a></p>
+            <p class="f-text2"><a href="#">Монтаж</a></p>
+            <p class="f-text2"><a href="#">Карта сайта</a></p>
+        </div>
+
+        <div class="block">
+            <p class="f-text1"><a href="#">КАК ПРИОБРЕСТИ</a></p>
+
+            <p class="f-text2"><a href="#">Доставка</a></p>
+            <p class="f-text2"><a href="#">Оплата</a></p>
+            <p class="f-text2"><a href="#">Публичная оферта</a></p>
+            <p class="f-text2"><a href="#">Политика конфиденциальности</a></p>
+        </div>
+
+        <div class="block">
+            <p class="f-text1"><a href="#">ЛИЧНОЕ ПРОСТРАНСТВО</a></p>
+
+            <p class="f-text2"><a href="#">Войти в кабинет</a></p>
+            <p class="f-text2"><a href="#">История заказов</a></p>
+            <p class="f-text2"><a href="#">Избранные товары</a></p>
+            <p class="f-text2"><a href="#">Подписка на новости</a></p>
+        </div>
+    </div>
+
+    <div class="footer-cont1">
+        <p class="f-text"><a href="#">Copyright © 2019 | ФД "КерамикЪ"</a></p>
+        <a href="#"><img src="Vector (51).png" alt="mango"></a>
+    </div>
+ </div>
+</body>
+</html>
